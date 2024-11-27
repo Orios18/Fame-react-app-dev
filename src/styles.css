@@ -1,0 +1,117 @@
+/* General Settings */
+body {
+    font-family: 'Telegrama', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e2f; /* Dark background */
+    color: #ffffff; /* Light text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full-page height */
+    overflow: hidden; /* Prevent scrolling */
+}
+
+/* App Container */
+.app {
+    width: 100%;
+    max-width: 420px; /* Fixed width for mobile optimization */
+    height: 100%;
+    background-color: #2a2a3c; /* Slightly lighter dark for contrast */
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px; /* Rounded corners for a card-like look */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    overflow: hidden; /* Ensure content stays inside */
+}
+
+/* Header */
+.header {
+    background-color: #0088cc; /* Telegram's blue */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 2px solid #0077b3; /* Slight darker border for depth */
+}
+
+/* Main Content */
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Profile Section */
+.profile-section, .fame-stats, .hall-of-fame {
+    width: 100%;
+    max-width: 350px;
+    padding: 20px;
+    background-color: #1e1e2f; /* Match dark theme */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.profile-section h1, 
+.fame-stats h2, 
+.hall-of-fame h3 {
+    font-size: 20px;
+    color: #0088cc; /* Telegram blue for headings */
+}
+
+.profile-section p, 
+.fame-stats p, 
+.hall-of-fame li {
+    font-size: 16px;
+    color: #d0d0d0; /* Subtle light text */
+}
+
+/* Hall of Fame List */
+.hall-of-fame ul {
+    list-style: none;
+    padding: 0;
+}
+
+.hall-of-fame li {
+    padding: 5px 0;
+    border-bottom: 1px solid #444455; /* Subtle divider */
+}
+
+.hall-of-fame li:last-child {
+    border-bottom: none; /* No border for last item */
+}
+
+/* Bottom Navigation Bar */
+.bottom-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #2a2a3c;
+    padding: 15px 0;
+    border-top: 1px solid #444455; /* Divider for top */
+    box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.bottom-bar button {
+    background: none;
+    border: none;
+    font-family: 'Telegrama', sans-serif;
+    font-size: 16px;
+    color: #6b778c; /* Muted text */
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.bottom-bar button:hover {
+    color: #0088cc; /* Highlight on hover */
+    transform: scale(1.1); /* Slight pop effect */
+}
+
+.bottom-bar button.active {
+    color: #0088cc; /* Telegram blue for active tab */
+    font-weight: bold;
+}
